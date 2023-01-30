@@ -1,0 +1,43 @@
+<!-- <h1>String Interpolation</h1>
+
+<h3>{{title}}</h3>
+
+
+<h1> Property Binding</h1>
+<input type="text" [value]="username">
+
+<!-- <img [src]="imgsrc" > 
+
+<h1> Event Binding</h1>
+<button (click)="isCount()">Count</button>
+<h1>{{count}}</h1>
+
+<button (click)="isClicked()">Click Me</button>
+<p class="{ isClicked() ? red : yellow}"> {{demoOfBinding}}</p>
+
+<button [disabled]="isDisabled" >Statue of liberty</button>
+
+
+
+<h1>Two way data binding</h1>
+<input type="text" [(ngModel)]="fullname">
+
+<h3>Developer Name : {{fullname}}</h3>
+
+<h2>Event Binding</h2>
+<input type="text" (input)="onUpdate($event)">
+<button (click)="onClicked()">Submit</button>
+<p *ngIf="this.indCurrencyValueShow">{{this.indCurrencyValue | currency:'INR'}}</p>
+
+<ul *ngFor="let arrvalue of isArr">
+    <li>{{arrvalue}}</li>
+</ul>
+
+-->
+<!-- <input type="text" (event)="onUpdate($event)"> -->
+<!-- <button (click)="onClicked()">Click me</button> -->
+<!-- <app-child [  isDisable]="isDisable"></app-child> -->
+<app-users [username]="username" (notify)="isNotifyHandler($event)"></app-users>
+
+<app-userdetails></app-userdetails>
+<h2>Parent Data {{display}}</h2>
